@@ -16,7 +16,7 @@ If you want to use my Firestore database Please send a request.
 `var cfenv = require('cfenv');`\
 `var appEnv = cfenv.getAppEnv();`
 
-5. Replace the `app.listen()` method with below code\
+5. Replace the `app.listen()` method with below code
 
 ```
 var server = app.listen(6001, function () {
