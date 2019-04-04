@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".userprofile">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"/>
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/tabHost"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/first_Tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/flags"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/flags"
+                        android:gravity="center"
+                        android:text="Kishan Raval"
+                        android:textStyle="bold"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="100dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/org"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/flags"
+                        android:gravity="center"
+                        android:text="Orgnigation :"
+                        android:textStyle="bold"
+                        android:paddingTop="48dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/orgn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/org"
+                        android:gravity="center"
+                        android:text="hp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/org"
+                        android:layout_below="@+id/name"
+                        android:text="Designation :"
+                        android:textStyle="bold"
+                        android:paddingTop="88dp"
+                        android:paddingLeft="115dp"
+                        android:paddingRight="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/desi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/orgn"
+                        android:layout_below="@+id/des"
+                        android:text="Doctor"
+                        android:layout_marginLeft="75dp"
+                        android:paddingLeft="135dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/bday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/desi"
+                        android:text="Birth Date :"
+                        android:textStyle="bold"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/bdayz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bday"
+                        android:text="07/07/1995"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bdayz"
+                        android:textStyle="bold"
+                        android:text="Bio : "
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="40dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/bioz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bio"
+                        android:text="My name is kishan"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/second_Tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    tools:context=".userprofile">
+
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.MapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/map"
+                        android:textStyle="bold"
+                        android:text="Email-Id : "
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/emailid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email"
+                        android:text="kishan@gmail.com"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/emailid"
+                        android:gravity="center"
+                        android:text="Contact :"
+                        android:textStyle="bold"
+                        android:paddingTop="38dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/contactones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contact"
+                        android:gravity="center"
+                        android:text="9912399456"
+                        android:paddingTop="0dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/contactonelable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/contactones"
+                        android:gravity="center"
+                        android:text="(Work)"
+                        android:textStyle="bold"
+                        android:paddingTop="232dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/contacttwos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contactones"
+                        android:text="9978999012"
+                        android:paddingLeft="00dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/contacttwolable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contactonelable"
+                        android:layout_toRightOf="@+id/contactones"
+                        android:gravity="center"
+                        android:text="(Home)"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/addresslable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contacttwos"
+                        android:gravity="center"
+                        android:text="Address :"
+                        android:textStyle="bold"
+                        android:paddingTop="38dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/addresss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addresslable"
+                        android:gravity="center"
+                        android:text="Thaltej"
+                        android:paddingTop="0dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
