@@ -1,6 +1,6 @@
 applications:
   - path: .
-    name: mycrm-demo
+    name: mycrm
     environment_json: {}
     memory: 256M
     instances: 1
